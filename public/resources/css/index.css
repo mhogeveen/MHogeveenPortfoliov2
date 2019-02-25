@@ -6,7 +6,7 @@
   position: fixed;
   z-index: 100;
   width: 100%;
-  border-bottom: 1px solid black; }
+  background-color: white; }
 
 .navigation__container {
   justify-content: space-between;
@@ -44,6 +44,9 @@
   padding: 0 0 0 1rem; }
 
 #banner {
+  background-image: url(../images/banner_bg.jpg);
+  background-size: cover;
+  height: 580px;
   width: 100%; }
 
 #about {
@@ -74,12 +77,6 @@ html {
 body,
 #main {
   width: 100%; }
-
-#main {
-  justify-content: center;
-  align-items: stretch;
-  flex-direction: row;
-  display: flex; }
 
 .wrapper {
   width: 85%; }
