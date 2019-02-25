@@ -4,6 +4,7 @@
   z-index: 100;
   width: 100%;
   background-color: white;
+  border-bottom: 2px solid $cyan;
 }
 
 .navigation__container {
@@ -25,20 +26,29 @@
 }
 
 .logo__first-name {
-  color: black;
+  color: $cyan;
 }
 
 .logo__last-name {
-  color: black;
+  color: $dark-gray;
   padding: 0 0 0 0.5rem;
 }
 
 .navigation__menu {
-
+  @include flex-box(flex-start, center, row, flex);
+  height: 100%;
 }
 
 .menu__item {
-  color: black;
+  @include flex-box(flex-start, center, row, flex);
+  height: 100%;
+  color: $blackish;
   text-decoration: none;
-  padding: 0 0 0 1rem;
+  padding: 0 1rem;
+  transition: all 300ms ease;
+
+  &:hover {
+    background-color: $cyan;
+    color: white;
+  }
 }
