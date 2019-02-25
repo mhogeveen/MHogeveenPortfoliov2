@@ -1,3 +1,5 @@
 #skills {
+  @include flex-box(center, stretch, row, flex);
   width: 100%;
+  background-color: $background;
 }
