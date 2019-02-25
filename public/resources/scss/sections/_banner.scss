@@ -1,6 +1,14 @@
 #banner {
+  @include flex-box(center, stretch, row, flex);
   background-image: url(../images/banner_bg.jpg);
   background-size: cover;
   height: 500px + 80px;
   width: 100%;
+}
+
+.banner__content {
+  @include flex-box(center, center, column, flex);
+  width: 100%;
+  height: 100%;
+  color: white;
 }
