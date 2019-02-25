@@ -4,7 +4,7 @@
   z-index: 100;
   width: 100%;
   background-color: white;
-  //border-bottom: 2px solid $cyan;
+  border-bottom: 2px solid lightgray;
 }
 
 .navigation__container {
@@ -28,7 +28,7 @@
 }
 
 .logo__first-name {
-  color: $cyan2;
+  color: $cyan;
 }
 
 .logo__last-name {
@@ -48,10 +48,9 @@
   color: $blackish;
   text-decoration: none;
   padding: 0 1rem;
-  //transition: all 300ms ease;
 
   &:hover {
-    background-color: $cyan2;
+    background-color: $cyan;
     color: white;
   }
 
