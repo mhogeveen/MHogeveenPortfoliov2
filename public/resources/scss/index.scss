@@ -6,12 +6,13 @@
 @import "helper/placeholders";
 
 // Importing section scss files
-// @import "sections/menu";
-// @import "sections/home";
-// @import "sections/about-me";
-// @import "sections/skills";
-// @import "sections/portfolio";
-// @import "sections/contact";
+@import "sections/navigation";
+@import "sections/banner";
+@import "sections/about";
+@import "sections/skills";
+@import "sections/portfolio";
+@import "sections/contact";
+@import "sections/footer";
 
 html {
   width: 100%;
@@ -30,4 +31,14 @@ body,
 #contact,
 #footer {
   width: 100%;
+}
+
+#navigation,
+#main,
+#footer {
+  @include flex-box(center, stretch, row, flex);
+}
+
+.container {
+  width: 80%;
 }
