@@ -22,23 +22,14 @@ html {
 }
 
 body,
-#navigation,
-#main,
-#banner,
-#about,
-#skills,
-#portfolio,
-#contact,
-#footer {
+#main {
   width: 100%;
 }
 
-#navigation,
-#main,
-#footer {
+#main {
   @include flex-box(center, stretch, row, flex);
 }
 
-.container {
-  width: 80%;
+.wrapper {
+  width: 85%;
 }

@@ -1,3 +1,70 @@
+#navigation {
+  justify-content: center;
+  align-items: stretch;
+  flex-direction: row;
+  display: flex;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  border-bottom: 1px solid black; }
+
+.navigation__container {
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  display: flex;
+  width: 100%;
+  height: 80px; }
+
+.navigation__logo {
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-direction: row;
+  display: flex; }
+  .navigation__logo a {
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-direction: row;
+    display: flex;
+    text-decoration: none; }
+    .navigation__logo a h1 {
+      font-size: 2rem;
+      font-weight: 500; }
+
+.logo__first-name {
+  color: black; }
+
+.logo__last-name {
+  color: black;
+  padding: 0 0 0 0.5rem; }
+
+.menu__item {
+  color: black;
+  text-decoration: none;
+  padding: 0 0 0 1rem; }
+
+#banner {
+  width: 100%; }
+
+#about {
+  width: 100%; }
+
+#skills {
+  width: 100%; }
+
+#portfolio {
+  width: 100%; }
+
+#contact {
+  width: 100%; }
+
+#footer {
+  justify-content: center;
+  align-items: stretch;
+  flex-direction: row;
+  display: flex;
+  width: 100%; }
+
 html {
   width: 100%;
   font-size: 16px;
@@ -5,25 +72,16 @@ html {
   scroll-behavior: smooth; }
 
 body,
-#navigation,
-#main,
-#banner,
-#about,
-#skills,
-#portfolio,
-#contact,
-#footer {
+#main {
   width: 100%; }
 
-#navigation,
-#main,
-#footer {
+#main {
   justify-content: center;
   align-items: stretch;
   flex-direction: row;
   display: flex; }
 
-.container {
-  width: 80%; }
+.wrapper {
+  width: 85%; }
 
 /*# sourceMappingURL=index.css.map */
