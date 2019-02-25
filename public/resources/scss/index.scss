@@ -16,8 +16,18 @@
 html {
   width: 100%;
   font-size: 16px;
-  color: white;
-  background-color: black;
   font-family: 'Montserrat', sans-serif;
   scroll-behavior: smooth;
+}
+
+body,
+#navigation,
+#main,
+#banner,
+#about,
+#skills,
+#portfolio,
+#contact,
+#footer {
+  width: 100%;
 }
