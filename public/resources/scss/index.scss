@@ -30,3 +30,36 @@ body,
   width: 85%;
   height: 100%;
 }
+
+.button--hover-diamond {
+  &:hover::before,
+  &:hover::after {
+    display: block;
+  }
+
+  &::before {
+    content: '';
+    display: none;
+    position: absolute;
+    z-index: 110;
+    bottom: -10px;
+    width: 0;
+    height: 0;
+    border-top: 10px solid white;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+  }
+
+  &::after {
+    content: '';
+    display: none;
+    position: absolute;
+    z-index: 110;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 10px solid white;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+  }
+}
