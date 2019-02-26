@@ -171,7 +171,10 @@
   width: 30%;
   color: white;
   margin: 0.5rem;
-  box-shadow: 0px 0px 10px 1px #787878; }
+  box-shadow: 0px 0px 10px 1px #787878;
+  transition: transform 300ms ease; }
+  .hard__skill:hover {
+    transform: scale(1.05); }
 
 .skill__icon {
   padding: 1rem; }
