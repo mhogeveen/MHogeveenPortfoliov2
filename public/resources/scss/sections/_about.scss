@@ -10,23 +10,25 @@
 }
 
 .about__story-picture {
-  @include flex-box(space-between, stretch, row, flex);
+  @include flex-box(space-between, center, row, flex);
   width: 100%;
 }
 
 .story-picture__story {
-  width: 70%;
+  width: 75%;
+  min-height: 300px;
   line-height: 1.5;
   padding: 2rem 5rem 2rem 2rem;
   border: 1px solid lightgray;
 }
 
 .story-picture__picture {
+  align-self: flex-start;
   position: relative;
   bottom: 3rem;
   right: 3rem;
-  width: 30%;
-  height: 80vw - (80vw*0.7);
+  width: 25%;
+  height: 75vw - (75vw*0.75);
   border: 2px solid $cyan;
   box-shadow: 0px 0px 10px 1px rgba(120,120,120,1);
 }

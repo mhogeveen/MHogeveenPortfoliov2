@@ -2,4 +2,54 @@
   @include flex-box(center, stretch, row, flex);
   width: 100%;
   background-color: $background;
+  box-shadow: 0px 0px 10px 1px rgba(120,120,120,1);
+  padding: 3rem 0;
+}
+
+.skills__hard {
+  @include flex-box(space-between, stretch, row, flex);
+  flex-wrap: wrap;
+  background-color: $background;
+  //border: 2px solid $dark-gray;
+  padding: 2rem;
+}
+
+.hard__skill {
+  @include flex-box(flex-start, center, row, flex);
+  width: 30%;
+  color: white;
+  margin: 0.5rem;
+  box-shadow: 0px 0px 10px 1px rgba(120,120,120,1);
+}
+
+.skill__icon {
+  padding: 1rem;
+}
+
+.skill__name {
+  font-weight: 500;
+}
+
+.skill--html {
+  background-color: $html;
+}
+
+.skill--css {
+  background-color: $css;
+}
+
+.skill--js {
+  background-color: $js;
+}
+
+.skill--git {
+  background-color: $git;
+}
+
+.skill--sass {
+  background-color: $sass;
+}
+
+.skill--wp {
+  background-color: $wp;
 }
