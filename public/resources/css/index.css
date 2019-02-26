@@ -236,7 +236,7 @@ body,
   bottom: -10px;
   width: 0;
   height: 0;
-  border-top: 10px solid white;
+  border-top: 10px solid #343c3f;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent; }
 .button--hover-diamond::after {
@@ -247,7 +247,7 @@ body,
   bottom: 0;
   width: 0;
   height: 0;
-  border-bottom: 10px solid white;
+  border-bottom: 10px solid #343c3f;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent; }
 
