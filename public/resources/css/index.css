@@ -154,16 +154,15 @@
   box-shadow: 0px 0px 10px 1px #787878;
   padding: 3rem 0; }
 
-.skills__hard {
+.skills__container {
   justify-content: space-between;
   align-items: stretch;
   flex-direction: row;
   display: flex;
   flex-wrap: wrap;
-  background-color: #f2f2f2;
   padding: 2rem; }
 
-.hard__skill {
+.skills__tile {
   justify-content: flex-start;
   align-items: center;
   flex-direction: row;
@@ -173,31 +172,31 @@
   margin: 0.5rem;
   box-shadow: 0px 0px 10px 1px #787878;
   transition: transform 300ms ease; }
-  .hard__skill:hover {
+  .skills__tile:hover {
     transform: scale(1.05); }
 
-.skill__icon {
+.tile__icon {
   padding: 1rem; }
 
-.skill__name {
+.tile__name {
   font-weight: 500; }
 
-.skill--html {
+.tile--html {
   background-color: #e44d26; }
 
-.skill--css {
+.tile--css {
   background-color: #0070b7; }
 
-.skill--js {
+.tile--js {
   background-color: #d6ba32; }
 
-.skill--git {
+.tile--git {
   background-color: #f05033; }
 
-.skill--sass {
+.tile--sass {
   background-color: #cd6799; }
 
-.skill--wp {
+.tile--wp {
   background-color: #21759b; }
 
 #portfolio {

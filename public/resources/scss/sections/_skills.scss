@@ -6,15 +6,13 @@
   padding: 3rem 0;
 }
 
-.skills__hard {
+.skills__container {
   @include flex-box(space-between, stretch, row, flex);
   flex-wrap: wrap;
-  background-color: $background;
-  //border: 2px solid $dark-gray;
   padding: 2rem;
 }
 
-.hard__skill {
+.skills__tile {
   @include flex-box(flex-start, center, row, flex);
   width: 30%;
   color: white;
@@ -27,34 +25,34 @@
   }
 }
 
-.skill__icon {
+.tile__icon {
   padding: 1rem;
 }
 
-.skill__name {
+.tile__name {
   font-weight: 500;
 }
 
-.skill--html {
+.tile--html {
   background-color: $html;
 }
 
-.skill--css {
+.tile--css {
   background-color: $css;
 }
 
-.skill--js {
+.tile--js {
   background-color: $js;
 }
 
-.skill--git {
+.tile--git {
   background-color: $git;
 }
 
-.skill--sass {
+.tile--sass {
   background-color: $sass;
 }
 
-.skill--wp {
+.tile--wp {
   background-color: $wp;
 }
