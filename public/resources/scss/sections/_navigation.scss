@@ -53,4 +53,8 @@
     background-color: $cyan;
     color: white;
   }
+
+  &:active {
+    transform: scale(0.96);
+  }
 }

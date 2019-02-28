@@ -74,13 +74,22 @@
   a {
     @include flex-box(center, stretch, row, flex);
     text-decoration: none;
-    color: white;
-    background-color: $red;
+    color: $dark-gray;
     font-size: 1rem;
     font-weight: 400;
     padding: 0.5rem 1rem;
     border-radius: 2px;
-    position: relative;
+    border: 2px solid $red;
+    transition: all 200ms ease;
+
+    &:hover {
+      background-color: $red;
+      color: white;
+    }
+
+    &:active {
+      transform: scale(0.96);
+    }
   }
 }
 

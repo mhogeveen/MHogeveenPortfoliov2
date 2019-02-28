@@ -39,7 +39,16 @@
   position: relative;
   color: white;
   text-decoration: none;
-  background-color: $red;
+  border: 2px solid $red;
   padding: 1rem;
   border-radius: 2px;
+  transition: background-color 200ms ease;
+
+  &:hover {
+    background-color: $red;
+  }
+
+  &:active {
+    transform: scale(0.96);
+  }
 }

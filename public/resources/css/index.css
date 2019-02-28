@@ -61,6 +61,8 @@
   .menu__button:hover {
     background-color: #00b98c;
     color: white; }
+  .menu__button:active {
+    transform: scale(0.96); }
 
 #banner {
   justify-content: center;
@@ -104,9 +106,14 @@
   position: relative;
   color: white;
   text-decoration: none;
-  background-color: #ed2300;
+  border: 2px solid #ed2300;
   padding: 1rem;
-  border-radius: 2px; }
+  border-radius: 2px;
+  transition: background-color 200ms ease; }
+  .banner__button:hover {
+    background-color: #ed2300; }
+  .banner__button:active {
+    transform: scale(0.96); }
 
 #about {
   justify-content: center;
@@ -284,13 +291,18 @@
     flex-direction: row;
     display: flex;
     text-decoration: none;
-    color: white;
-    background-color: #ed2300;
+    color: #343c3f;
     font-size: 1rem;
     font-weight: 400;
     padding: 0.5rem 1rem;
     border-radius: 2px;
-    position: relative; }
+    border: 2px solid #ed2300;
+    transition: all 200ms ease; }
+    .project__link a:hover {
+      background-color: #ed2300;
+      color: white; }
+    .project__link a:active {
+      transform: scale(0.96); }
 
 .project__description {
   width: 60%;
