@@ -352,7 +352,7 @@
 
 .contact__information {
   justify-content: flex-start;
-  align-items: stretch;
+  align-items: flex-start;
   flex-direction: column;
   display: flex;
   width: 50%; }
@@ -373,7 +373,8 @@
 
 .information__name {
   font-weight: 600;
-  font-size: 1.2rem; }
+  font-size: 1.2rem;
+  color: #00b98c; }
 
 .information__phone,
 .information__mail {
@@ -384,15 +385,29 @@
   .information__mail i {
     text-align: center;
     width: 2rem; }
+  .information__phone:hover i,
+  .information__mail:hover i {
+    color: #ed2300; }
 
-.contact__icons {
-  justify-content: flex-start;
-  align-items: stretch;
+.contact__social {
+  justify-content: center;
+  align-items: center;
   flex-direction: row;
-  display: flex; }
+  display: flex;
+  width: 50%; }
+
+.social__icon {
+  margin: 2rem; }
+  .social__icon i {
+    color: #343c3f; }
+  .social__icon .fa-github:hover {
+    color: black; }
+  .social__icon .fa-linkedin-in:hover {
+    color: #0077b5; }
 
 iframe {
-  margin-bottom: -3px; }
+  margin-bottom: -3px;
+  border-top: 2px solid lightgray; }
 
 #footer {
   justify-content: center;

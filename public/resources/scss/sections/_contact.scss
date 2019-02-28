@@ -16,7 +16,7 @@
 }
 
 .contact__information {
-  @include flex-box(flex-start, stretch, column, flex);
+  @include flex-box(flex-start, flex-start, column, flex);
   width: 50%;
 }
 
@@ -36,6 +36,7 @@
 .information__name {
   font-weight: 600;
   font-size: 1.2rem;
+  color: $cyan;
 }
 
 .information__phone,
@@ -48,12 +49,38 @@
     text-align: center;
     width: 2rem;
   }
+
+  &:hover i {
+    color: $red;
+  }
 }
 
-.contact__icons {
-  @include flex-box(flex-start, stretch, row, flex);
+.contact__social {
+  @include flex-box(center, center, row, flex);
+  width: 50%;
+}
+
+.social__icon {
+  margin: 2rem;
+
+  i {
+    color: $dark-gray;
+  }
+
+  .fa-github {
+    &:hover {
+      color: black;
+    }
+  }
+
+  .fa-linkedin-in {
+    &:hover {
+      color: $linkedin;
+    }
+  }
 }
 
 iframe {
   margin-bottom: -3px;
+  border-top: 2px solid lightgray;
 }
