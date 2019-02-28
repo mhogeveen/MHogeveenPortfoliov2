@@ -141,8 +141,7 @@
   right: 3rem;
   width: 25%;
   height: 18.75vw;
-  border: 2px solid #00b98c;
-  box-shadow: 0px 0px 10px 1px #787878; }
+  border: 2px solid #00b98c; }
 
 #skills {
   justify-content: center;
@@ -167,19 +166,28 @@
   align-items: center;
   flex-direction: row;
   display: flex;
-  width: 30%;
   color: white;
   margin: 0.5rem;
-  box-shadow: 0px 0px 10px 1px #787878;
   transition: transform 300ms ease; }
-  .skills__tile:hover {
-    transform: scale(1.05); }
 
 .tile__icon {
+  width: 2.5rem;
+  text-align: center; }
+
+.icon--paddingone {
   padding: 1rem; }
+
+.icon--paddinghalf {
+  padding: 0.5rem; }
 
 .tile__name {
   font-weight: 500; }
+
+.tile--width30 {
+  width: 30%; }
+
+.tile--hover:hover {
+  transform: scale(1.05); }
 
 .tile--html {
   background-color: #e44d26; }
@@ -280,17 +288,13 @@
 
 .project__description {
   width: 60%;
-  padding: 0 2rem 0 0;
+  padding: 0 2rem 2rem 0;
   border-right: 1px solid gray; }
   .project__description p {
     line-height: 1.5; }
 
 .project__list {
   width: 40%; }
-  .project__list ul {
-    padding: 0 0 0 2rem; }
-    .project__list ul li {
-      padding: 0.5rem 0; }
 
 .project__expand-collapse {
   display: flex;
@@ -310,6 +314,9 @@
   margin: 0 0 0 1rem;
   position: relative;
   bottom: 1rem; }
+
+.tile--extra {
+  background-color: #343c3f; }
 
 #contact {
   width: 100%; }

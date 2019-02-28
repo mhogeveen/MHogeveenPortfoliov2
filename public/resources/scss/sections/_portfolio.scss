@@ -86,7 +86,7 @@
 
 .project__description {
   width: 60%;
-  padding: 0 2rem 0 0;
+  padding: 0 2rem 2rem 0;
   border-right: 1px solid gray;
 
   p {
@@ -96,14 +96,6 @@
 
 .project__list {
   width: 40%;
-
-  ul {
-    padding: 0 0 0 2rem;
-
-    li {
-      padding: 0.5rem 0;
-    }
-  }
 }
 
 .project__expand-collapse {
@@ -129,4 +121,8 @@
   margin: 0 0 0 1rem;
   position: relative;
   bottom: 1rem;
+}
+
+.tile--extra {
+  background-color: $dark-gray;
 }
