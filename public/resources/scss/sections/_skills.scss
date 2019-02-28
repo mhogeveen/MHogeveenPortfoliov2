@@ -7,7 +7,7 @@
 }
 
 .skills__container {
-  @include flex-box(space-between, stretch, row, flex);
+  @include flex-box(flex-start, stretch, row, flex);
   flex-wrap: wrap;
   padding: 2rem;
 }
@@ -68,4 +68,12 @@
 
 .tile--wp {
   background-color: $wp;
+}
+
+.tile--cli {
+  background-color: $cli;
+}
+
+.tile--responsive {
+  background-color: $dark-gray;
 }

@@ -154,7 +154,7 @@
   padding: 2rem 0; }
 
 .skills__container {
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: stretch;
   flex-direction: row;
   display: flex;
@@ -206,6 +206,12 @@
 
 .tile--wp {
   background-color: #21759b; }
+
+.tile--cli {
+  background-color: #27ae60; }
+
+.tile--responsive {
+  background-color: #343c3f; }
 
 #portfolio {
   justify-content: center;
@@ -280,9 +286,9 @@
     text-decoration: none;
     color: white;
     background-color: #ed2300;
-    font-size: 1.2rem;
-    font-weight: 500;
-    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 0.5rem 1rem;
     border-radius: 2px;
     position: relative; }
 
@@ -314,9 +320,6 @@
   margin: 0 0 0 1rem;
   position: relative;
   bottom: 1rem; }
-
-.tile--extra {
-  background-color: #343c3f; }
 
 #contact {
   width: 100%; }
