@@ -1,12 +1,15 @@
 // Colors
+// Overal use
 $blackish: #191c23;
 $dark-gray: #343c3f;
 $background: #f2f2f2;
 
+// Highlight
 $cyan: #00b98c;
 $yellow: #f29f00;
 $red: #ed2300;
 
+// Skills/brands
 $html: #e44d26;
 $css: #0070b7;
 $js: #d6ba32;
@@ -14,11 +17,13 @@ $git: #f05033;
 $sass: #cd6799;
 $wp: #21759b;
 $cli: #27ae60;
+$linkedin: #0077b5;
 
+// Portfolio projects
 $colmar: #f2be54;
 $pure: #1e1f26;
 
-$linkedin: #0077b5;
-
-
+// Distances/breakpoints
 $height-offset: 80px;
+
+$breakpoint-menu: 900px;
