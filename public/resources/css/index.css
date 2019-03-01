@@ -277,6 +277,12 @@
   align-items: stretch;
   flex-direction: row;
   display: flex; }
+  @media only screen and (max-width: 900px) {
+    .row {
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: column;
+      display: flex; } }
 
 .row__container {
   justify-content: flex-start;
@@ -387,6 +393,9 @@
 .contact__title {
   font-size: 2.5rem;
   padding: 0 0 3rem 0; }
+  @media only screen and (max-width: 900px) {
+    .contact__title {
+      text-align: center; } }
 
 .row--paddingbottom3 {
   padding-bottom: 3rem; }
@@ -397,6 +406,13 @@
   flex-direction: column;
   display: flex;
   width: 50%; }
+  @media only screen and (max-width: 900px) {
+    .contact__information {
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: column;
+      display: flex;
+      text-align: center; } }
 
 .information__address {
   justify-content: flex-start;
@@ -411,6 +427,11 @@
   line-height: 1.5;
   color: #343c3f;
   padding-left: 2rem; }
+  @media only screen and (max-width: 900px) {
+    .information__name,
+    .information__street,
+    .information__zipcode {
+      padding-left: 0; } }
 
 .information__name {
   font-weight: 600;

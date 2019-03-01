@@ -10,6 +10,10 @@
 
 .row {
   @include flex-box(flex-start, stretch, row, flex);
+
+  @include mq($breakpoint-menu) {
+    @include flex-box(flex-start, center, column, flex);
+  }
 }
 
 .row__container {
