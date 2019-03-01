@@ -6,24 +6,34 @@
 
 .portfolio__title {
   font-size: 2.5rem;
+
+  @include mq($breakpoint600) {
+    padding: 0 0 2rem 0;
+    text-align: center;
+  }
 }
 
 .row {
   @include flex-box(flex-start, stretch, row, flex);
-
-  @include mq($breakpoint-menu) {
-    @include flex-box(flex-start, center, column, flex);
-  }
 }
 
 .row__container {
   @include flex-box(flex-start, stretch, row, flex);
+
+  @include mq($breakpoint600) {
+    @include flex-box(flex-start, stretch, column, flex);
+  }
 }
 
 .row--logo1,
 .row--logo2,
 .row--logo3 {
   height: 150px;
+
+  @include mq($breakpoint600) {
+    @include flex-box(flex-start, center, column, flex);
+    height: auto;
+  }
 }
 
 .row--logo1 {
@@ -69,11 +79,24 @@
 .project__logo {
   @include flex-box(flex-start, center, row, flex);
   width: 60%;
+
+  @include mq($breakpoint600) {
+    @include flex-box(center, stretch, row, flex);
+    width: 100%;
+    padding: 1rem 0;
+    text-align: center;
+  }
 }
 
 .project__link {
   @include flex-box(flex-end, center, row, flex);
   width: 40%;
+
+  @include mq($breakpoint600) {
+    @include flex-box(center, stretch, row, flex);
+    padding: 1rem 0;
+    text-align: center;
+  }
 
   a {
     @include flex-box(center, stretch, row, flex);
@@ -102,6 +125,13 @@
   padding: 0 2rem 2rem 0;
   border-right: 1px solid gray;
 
+  @include mq($breakpoint600) {
+    border-right: none;
+    border-bottom: 1px solid gray;
+    width: 100%;
+    padding: 0 0 1rem 0;
+  }
+
   p {
     line-height: 1.5;
   }
@@ -109,6 +139,10 @@
 
 .project__list {
   width: 40%;
+
+  @include mq($breakpoint600) {
+    width: 100%;
+  }
 }
 
 .project__expand-collapse {

@@ -17,6 +17,10 @@
 
 .row--paddingbottom3 {
   padding-bottom: 3rem;
+
+  @include mq($breakpoint-menu) {
+    @include flex-box(flex-start, center, column, flex);
+  }
 }
 
 .contact__information {
@@ -26,6 +30,7 @@
   @include mq($breakpoint-menu) {
     @include flex-box(flex-start, center, column, flex);
     text-align: center;
+    width: 100%;
   }
 }
 

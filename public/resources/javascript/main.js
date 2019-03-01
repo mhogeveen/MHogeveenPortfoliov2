@@ -2,7 +2,6 @@ $(document).ready(function() {
 
   // Portfolio Section Functionality
   $('.row--button1, .row--button2, .row--button3').click(function() {
-      //$('i').toggleClass('fa-angle-down fa-angle-up');
       if ($(this).hasClass('row--button1')) {
         $('.row--description1').slideToggle();
         $('.row--button1 i').toggleClass('fa-angle-down fa-angle-up');
