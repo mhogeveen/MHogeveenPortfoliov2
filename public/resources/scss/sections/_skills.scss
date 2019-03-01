@@ -7,9 +7,13 @@
 }
 
 .skills__container {
-  @include flex-box(flex-start, stretch, row, flex);
+  @include flex-box(center, stretch, row, flex);
   flex-wrap: wrap;
   padding: 2rem;
+
+  @include mq($breakpoint-menu) {
+    padding: 0 2rem;
+  }
 }
 
 .skills__tile {
@@ -26,6 +30,10 @@
 
 .icon--paddingone {
   padding: 1rem;
+
+  @include mq($breakpoint-menu) {
+    padding: 0.5rem;
+  }
 }
 
 .icon--paddinghalf {
@@ -38,6 +46,14 @@
 
 .tile--width30 {
   width: 30%;
+
+  @include mq($breakpoint-menu) {
+    width: 45%;
+  }
+
+  @include mq($breakpoint600) {
+    width: 100%;
+  }
 }
 
 .tile--hover {

@@ -190,12 +190,15 @@
   padding: 2rem 0; }
 
 .skills__container {
-  justify-content: flex-start;
+  justify-content: center;
   align-items: stretch;
   flex-direction: row;
   display: flex;
   flex-wrap: wrap;
   padding: 2rem; }
+  @media only screen and (max-width: 900px) {
+    .skills__container {
+      padding: 0 2rem; } }
 
 .skills__tile {
   justify-content: flex-start;
@@ -212,6 +215,9 @@
 
 .icon--paddingone {
   padding: 1rem; }
+  @media only screen and (max-width: 900px) {
+    .icon--paddingone {
+      padding: 0.5rem; } }
 
 .icon--paddinghalf {
   padding: 0.5rem; }
@@ -221,6 +227,12 @@
 
 .tile--width30 {
   width: 30%; }
+  @media only screen and (max-width: 900px) {
+    .tile--width30 {
+      width: 45%; } }
+  @media only screen and (max-width: 600px) {
+    .tile--width30 {
+      width: 100%; } }
 
 .tile--hover:hover {
   transform: scale(1.05); }
