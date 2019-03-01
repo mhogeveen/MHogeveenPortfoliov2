@@ -29,6 +29,10 @@ body,
 .wrapper {
   width: 80%;
   height: 100%;
+
+  @include mq($breakpoint-menu) {
+    width: 90%;
+  }
 }
 
 .button--hover-diamond {

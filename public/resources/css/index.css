@@ -450,6 +450,9 @@ body,
 .wrapper {
   width: 80%;
   height: 100%; }
+  @media only screen and (max-width: 900px) {
+    .wrapper {
+      width: 90%; } }
 
 .button--hover-diamond:hover::before, .button--hover-diamond:hover::after {
   display: block; }
