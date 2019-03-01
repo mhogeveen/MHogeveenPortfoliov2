@@ -133,6 +133,10 @@
 .about__titel {
   font-size: 2.5rem;
   padding: 0 0 4rem 0; }
+  @media only screen and (max-width: 900px) {
+    .about__titel {
+      padding: 0 0 2rem 0;
+      text-align: center; } }
 
 .about__story-picture {
   justify-content: space-between;
@@ -140,6 +144,12 @@
   flex-direction: row;
   display: flex;
   width: 100%; }
+  @media only screen and (max-width: 900px) {
+    .about__story-picture {
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: column-reverse;
+      display: flex; } }
 
 .story-picture__story {
   width: 75%;
@@ -147,6 +157,11 @@
   line-height: 1.5;
   padding: 2rem 5rem 2rem 2rem;
   border: 1px solid lightgray; }
+  @media only screen and (max-width: 900px) {
+    .story-picture__story {
+      padding: 2rem;
+      width: 80%;
+      padding: 2rem; } }
 
 .story-picture__picture {
   align-self: flex-start;
@@ -156,6 +171,13 @@
   width: 25%;
   height: 18.75vw;
   border: 2px solid #00b98c; }
+  @media only screen and (max-width: 900px) {
+    .story-picture__picture {
+      position: static;
+      width: 300px;
+      height: 300px;
+      margin: 0 0 2rem 0;
+      align-self: center; } }
 
 #skills {
   justify-content: center;
