@@ -27,7 +27,8 @@
 
 .row--logo1,
 .row--logo2,
-.row--logo3 {
+.row--logo3,
+.row--logo4 {
   height: 150px;
 
   @include mq($breakpoint600) {
@@ -64,9 +65,19 @@
   }
 }
 
+.row--logo4 {
+  span {
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: $tip;
+  }
+}
+
 .row--description1,
 .row--description2,
-.row--description3 {
+.row--description3,
+.row--description4 {
   display: none;
 }
 
