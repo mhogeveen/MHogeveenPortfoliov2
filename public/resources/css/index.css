@@ -125,14 +125,13 @@
   padding: 3rem 0;
   width: 100%; }
 
-.about__titel {
+.about__title {
   font-size: 2.5rem;
   padding: 0 0 4rem 0; }
   @media only screen and (max-width: 900px) {
-    .about__titel {
+    .about__title {
       padding: 0 0 2rem 0;
       text-align: center; } }
-
 .about__story-picture {
   justify-content: space-between;
   align-items: center;
@@ -157,7 +156,6 @@
       padding: 2rem;
       width: 80%;
       padding: 2rem; } }
-
 .story-picture__picture {
   align-self: flex-start;
   position: relative;

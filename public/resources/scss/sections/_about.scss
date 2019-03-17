@@ -4,53 +4,55 @@
   width: 100%;
 }
 
-.about__titel {
-  font-size: 2.5rem;
-  padding: 0 0 4rem 0;
+.about__ {
+  &title {
+    font-size: 2.5rem;
+    padding: 0 0 4rem 0;
 
-  @include mq($breakpoint-menu) {
-    padding: 0 0 2rem 0;
-    text-align: center;
+    @include mq($breakpoint-menu) {
+      padding: 0 0 2rem 0;
+      text-align: center;
+    }
+  }
+  &story-picture {
+    @include flex-box(space-between, center, row, flex);
+    width: 100%;
+
+    @include mq($breakpoint-menu) {
+      @include flex-box(flex-start, center, column-reverse, flex);
+    }
   }
 }
 
-.about__story-picture {
-  @include flex-box(space-between, center, row, flex);
-  width: 100%;
+.story-picture__ {
+  &story {
+    width: 75%;
+    min-height: 300px;
+    line-height: 1.5;
+    padding: 2rem 5rem 2rem 2rem;
+    border: 1px solid lightgray;
 
-  @include mq($breakpoint-menu) {
-    @include flex-box(flex-start, center, column-reverse, flex);
+    @include mq($breakpoint-menu) {
+      padding: 2rem;
+      width: 80%;
+      padding: 2rem;
+    }
   }
-}
+  &picture {
+    align-self: flex-start;
+    position: relative;
+    bottom: 3rem;
+    right: 3rem;
+    width: 25%;
+    height: 75vw - (75vw*0.75);
+    border: 2px solid $cyan;
 
-.story-picture__story {
-  width: 75%;
-  min-height: 300px;
-  line-height: 1.5;
-  padding: 2rem 5rem 2rem 2rem;
-  border: 1px solid lightgray;
-
-  @include mq($breakpoint-menu) {
-    padding: 2rem;
-    width: 80%;
-    padding: 2rem;
-  }
-}
-
-.story-picture__picture {
-  align-self: flex-start;
-  position: relative;
-  bottom: 3rem;
-  right: 3rem;
-  width: 25%;
-  height: 75vw - (75vw*0.75);
-  border: 2px solid $cyan;
-
-  @include mq($breakpoint-menu) {
-    position: static;
-    width: 300px;
-    height: 300px;
-    margin: 0 0 2rem 0;
-    align-self: center;
+    @include mq($breakpoint-menu) {
+      position: static;
+      width: 300px;
+      height: 300px;
+      margin: 0 0 2rem 0;
+      align-self: center;
+    }
   }
 }
