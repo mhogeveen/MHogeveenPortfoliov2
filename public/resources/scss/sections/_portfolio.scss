@@ -25,66 +25,58 @@
   }
 }
 
-.row--logo1,
-.row--logo2,
-.row--logo3,
-.row--logo4 {
-  height: 150px;
+.row--logo {
+  &1, &2, &3, &4 {
+    height: 150px;
 
-  @include mq($breakpoint600) {
-    @include flex-box(flex-start, center, column, flex);
-    height: auto;
+    @include mq($breakpoint600) {
+      @include flex-box(flex-start, center, column, flex);
+      height: auto;
+    }
+  }
+
+  &1 {
+    span {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 3rem;
+      font-weight: 600;
+      color: $colmar;
+    }
+  }
+
+  &2 {
+    span {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 3rem;
+      font-weight: 400;
+      color: lightgray;
+      text-shadow: 2px 2px black;
+    }
+  }
+
+  &3 {
+    span {
+      font-family: 'Raleway', sans-serif;
+      font-size: 3rem;
+      font-weight: 500;
+      color: $pure;
+    }
+  }
+
+  &4 {
+    span {
+      font-family: 'Comfortaa', sans-serif;
+      font-size: 3rem;
+      font-weight: 700;
+      color: $tip;
+    }
   }
 }
 
-.row--logo1 {
-  span {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 3rem;
-    font-weight: 600;
-    color: $colmar;
+.row--description {
+  &1, &2, &3, &4 {
+    display: none;
   }
-}
-
-.row--logo2 {
-  span {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 3rem;
-    font-weight: 400;
-    color: lightgray;
-    text-shadow: 2px 2px black;
-  }
-}
-
-.row--logo3 {
-  span {
-    font-family: 'Raleway', sans-serif;
-    font-size: 3rem;
-    font-weight: 500;
-    color: $pure;
-  }
-}
-
-.row--logo4 {
-  span {
-    font-family: 'Comfortaa', sans-serif;
-    font-size: 3rem;
-    font-weight: 700;
-    color: $tip;
-  }
-}
-
-.row--description1,
-.row--description2,
-.row--description3,
-.row--description4 {
-  display: none;
-}
-
-.row--button1,
-.row--button2,
-.row--button3 {
-
 }
 
 .project__logo {

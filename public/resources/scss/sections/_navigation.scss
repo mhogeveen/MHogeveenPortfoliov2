@@ -7,38 +7,41 @@
   border-bottom: 2px solid lightgray;
 }
 
-.navigation__container {
-  @include flex-box(space-between, center, row, flex);
-  width: 100%;
-  height: 80px;
+.navigation__ {
+  &container {
+    @include flex-box(space-between, center, row, flex);
+    width: 100%;
+    height: 80px;
 
-  @include mq($breakpoint-menu) {
-    flex-direction: column;
-    height: 90px;
+    @include mq($breakpoint-menu) {
+      flex-direction: column;
+      height: 90px;
+    }
   }
-}
 
-.navigation__logo {
-  @include flex-box(flex-start, center, row, flex);
-  height: 100%;
-  a {
+  &logo {
     @include flex-box(flex-start, center, row, flex);
-    text-decoration: none;
     height: 100%;
-    h1 {
-      font-size: 2rem;
-      font-weight: 500;
+    a {
+      @include flex-box(flex-start, center, row, flex);
+      text-decoration: none;
+      height: 100%;
+      h1 {
+        font-size: 2rem;
+        font-weight: 500;
+      }
     }
   }
 }
 
-.logo__first-name {
-  color: $cyan;
-}
-
-.logo__last-name {
-  color: $dark-gray;
-  padding: 0 0 0 0.5rem;
+.logo__{
+  &first-name {
+    color: $cyan;
+  }
+  &last-name {
+    color: $dark-gray;
+    padding: 0 0 0 0.5rem;
+  }
 }
 
 .navigation__menu {
