@@ -6,90 +6,96 @@
   padding: 2rem 0;
 }
 
-.skills__container {
-  @include flex-box(center, stretch, row, flex);
-  flex-wrap: wrap;
-  padding: 2rem;
+.skills {
+  &__container{
+    @include flex-box(center, stretch, row, flex);
+    flex-wrap: wrap;
+    padding: 2rem;
 
-  @include mq($breakpoint-menu) {
-    padding: 0 2rem;
+    @include mq($breakpoint-menu) {
+      padding: 0 2rem;
+    }
+  }
+
+  &__tile {
+    @include flex-box(flex-start, center, row, flex);
+    color: white;
+    margin: 0.5rem;
+    transition: transform 300ms ease;
   }
 }
 
-.skills__tile {
-  @include flex-box(flex-start, center, row, flex);
-  color: white;
-  margin: 0.5rem;
-  transition: transform 300ms ease;
+.tile {
+  &__icon {
+    width: 2.5rem;
+    text-align: center;
+  }
+
+  &__name {
+    font-weight: 500;
+  }
+
+  &--width30 {
+    width: 30%;
+
+    @include mq($breakpoint-menu) {
+      width: 45%;
+    }
+
+    @include mq($breakpoint600) {
+      width: 100%;
+    }
+  }
+
+  &--hover {
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  &--html {
+    background-color: $html;
+  }
+
+  &--css {
+    background-color: $css;
+  }
+
+  &--js {
+    background-color: $js;
+  }
+
+  &--git {
+    background-color: $git;
+  }
+
+  &--sass {
+    background-color: $sass;
+  }
+
+  &--wp {
+    background-color: $wp;
+  }
+
+  &--cli {
+    background-color: $cli;
+  }
+
+  &--responsive {
+    background-color: $dark-gray;
+  }
 }
 
-.tile__icon {
-  width: 2.5rem;
-  text-align: center;
-}
+.icon {
+  &--paddingone {
+    padding: 1rem;
 
-.icon--paddingone {
-  padding: 1rem;
+    @include mq($breakpoint-menu) {
+      padding: 0.5rem;
+    }
+  }
 
-  @include mq($breakpoint-menu) {
+  &--paddinghalf {
     padding: 0.5rem;
   }
-}
-
-.icon--paddinghalf {
-  padding: 0.5rem;
-}
-
-.tile__name {
-  font-weight: 500;
-}
-
-.tile--width30 {
-  width: 30%;
-
-  @include mq($breakpoint-menu) {
-    width: 45%;
-  }
-
-  @include mq($breakpoint600) {
-    width: 100%;
-  }
-}
-
-.tile--hover {
-  &:hover {
-    transform: scale(1.05);
-  }
-}
-
-.tile--html {
-  background-color: $html;
-}
-
-.tile--css {
-  background-color: $css;
-}
-
-.tile--js {
-  background-color: $js;
-}
-
-.tile--git {
-  background-color: $git;
-}
-
-.tile--sass {
-  background-color: $sass;
-}
-
-.tile--wp {
-  background-color: $wp;
-}
-
-.tile--cli {
-  background-color: $cli;
-}
-
-.tile--responsive {
-  background-color: $dark-gray;
 }

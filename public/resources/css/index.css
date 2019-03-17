@@ -36,19 +36,18 @@
     .navigation__logo a h1 {
       font-size: 2rem;
       font-weight: 500; }
-
-.logo__first-name {
-  color: #00b98c; }
-.logo__last-name {
-  color: #343c3f;
-  padding: 0 0 0 0.5rem; }
-
 .navigation__menu {
   justify-content: flex-start;
   align-items: center;
   flex-direction: row;
   display: flex;
   height: 100%; }
+
+.logo__first-name {
+  color: #00b98c; }
+.logo__last-name {
+  color: #343c3f;
+  padding: 0 0 0 0.5rem; }
 
 .menu__button {
   justify-content: center;
@@ -192,7 +191,6 @@
   @media only screen and (max-width: 900px) {
     .skills__container {
       padding: 0 2rem; } }
-
 .skills__tile {
   justify-content: flex-start;
   align-items: center;
@@ -205,19 +203,8 @@
 .tile__icon {
   width: 2.5rem;
   text-align: center; }
-
-.icon--paddingone {
-  padding: 1rem; }
-  @media only screen and (max-width: 900px) {
-    .icon--paddingone {
-      padding: 0.5rem; } }
-
-.icon--paddinghalf {
-  padding: 0.5rem; }
-
 .tile__name {
   font-weight: 500; }
-
 .tile--width30 {
   width: 30%; }
   @media only screen and (max-width: 900px) {
@@ -226,33 +213,32 @@
   @media only screen and (max-width: 600px) {
     .tile--width30 {
       width: 100%; } }
-
 .tile--hover:hover {
   transform: scale(1.05); }
-
 .tile--html {
   background-color: #e44d26; }
-
 .tile--css {
   background-color: #0070b7; }
-
 .tile--js {
   background-color: #d6ba32; }
-
 .tile--git {
   background-color: #f05033; }
-
 .tile--sass {
   background-color: #cd6799; }
-
 .tile--wp {
   background-color: #21759b; }
-
 .tile--cli {
   background-color: #27ae60; }
-
 .tile--responsive {
   background-color: #343c3f; }
+
+.icon--paddingone {
+  padding: 1rem; }
+  @media only screen and (max-width: 900px) {
+    .icon--paddingone {
+      padding: 0.5rem; } }
+.icon--paddinghalf {
+  padding: 0.5rem; }
 
 #portfolio {
   justify-content: center;

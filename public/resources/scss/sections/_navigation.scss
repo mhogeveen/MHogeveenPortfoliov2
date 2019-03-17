@@ -7,8 +7,8 @@
   border-bottom: 2px solid lightgray;
 }
 
-.navigation__ {
-  &container {
+.navigation {
+  &__container {
     @include flex-box(space-between, center, row, flex);
     width: 100%;
     height: 80px;
@@ -19,7 +19,7 @@
     }
   }
 
-  &logo {
+  &__logo {
     @include flex-box(flex-start, center, row, flex);
     height: 100%;
     a {
@@ -32,41 +32,44 @@
       }
     }
   }
+
+  &__menu {
+    @include flex-box(flex-start, center, row, flex);
+    height: 100%;
+  }
 }
 
-.logo__{
-  &first-name {
+.logo{
+  &__first-name {
     color: $cyan;
   }
-  &last-name {
+
+  &__last-name {
     color: $dark-gray;
     padding: 0 0 0 0.5rem;
   }
 }
 
-.navigation__menu {
-  @include flex-box(flex-start, center, row, flex);
-  height: 100%;
-}
+.menu {
+  &__button {
+    @include flex-box(center, center, row, flex);
+    position: relative;
+    height: 100%;
+    color: $blackish;
+    text-decoration: none;
+    padding: 0 1rem;
 
-.menu__button {
-  @include flex-box(center, center, row, flex);
-  position: relative;
-  height: 100%;
-  color: $blackish;
-  text-decoration: none;
-  padding: 0 1rem;
+    &:hover {
+      background-color: $cyan;
+      color: white;
+    }
 
-  &:hover {
-    background-color: $cyan;
-    color: white;
-  }
+    &:active {
+      transform: scale(0.96);
+    }
 
-  &:active {
-    transform: scale(0.96);
-  }
-
-  @include mq($breakpoint-menu) {
-    font-size: 0.9rem;
+    @include mq($breakpoint-menu) {
+      font-size: 0.9rem;
+    }
   }
 }
