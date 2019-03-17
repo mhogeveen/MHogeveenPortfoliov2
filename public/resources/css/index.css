@@ -403,16 +403,6 @@
   @media only screen and (max-width: 900px) {
     .contact__title {
       text-align: center; } }
-
-.row--paddingbottom3 {
-  padding-bottom: 3rem; }
-  @media only screen and (max-width: 900px) {
-    .row--paddingbottom3 {
-      justify-content: flex-start;
-      align-items: center;
-      flex-direction: column;
-      display: flex; } }
-
 .contact__information {
   justify-content: flex-start;
   align-items: flex-start;
@@ -427,50 +417,48 @@
       display: flex;
       text-align: center;
       width: 100%; } }
-
-.information__address {
-  justify-content: flex-start;
-  align-items: stretch;
-  flex-direction: column;
-  display: flex;
-  padding: 0 0 2rem 0; }
-
-.information__name,
-.information__street,
-.information__zipcode {
-  line-height: 1.5;
-  color: #343c3f;
-  padding-left: 2rem; }
-  @media only screen and (max-width: 900px) {
-    .information__name,
-    .information__street,
-    .information__zipcode {
-      padding-left: 0; } }
-
-.information__name {
-  font-weight: 600;
-  font-size: 1.2rem;
-  color: #00b98c; }
-
-.information__phone,
-.information__mail {
-  line-height: 1.5;
-  text-decoration: none;
-  color: #343c3f; }
-  .information__phone i,
-  .information__mail i {
-    text-align: center;
-    width: 2rem; }
-  .information__phone:hover i,
-  .information__mail:hover i {
-    color: #ed2300; }
-
 .contact__social {
   justify-content: center;
   align-items: center;
   flex-direction: row;
   display: flex;
   width: 50%; }
+
+.row--paddingbottom3 {
+  padding-bottom: 3rem; }
+  @media only screen and (max-width: 900px) {
+    .row--paddingbottom3 {
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: column;
+      display: flex; } }
+
+.information__name, .information__street, .information__zipcode {
+  line-height: 1.5;
+  color: #343c3f;
+  padding-left: 2rem; }
+  @media only screen and (max-width: 900px) {
+    .information__name, .information__street, .information__zipcode {
+      padding-left: 0; } }
+.information__name {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #00b98c; }
+.information__address {
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-direction: column;
+  display: flex;
+  padding: 0 0 2rem 0; }
+.information__phone, .information__mail {
+  line-height: 1.5;
+  text-decoration: none;
+  color: #343c3f; }
+  .information__phone i, .information__mail i {
+    text-align: center;
+    width: 2rem; }
+  .information__phone:hover i, .information__mail:hover i {
+    color: #ed2300; }
 
 .social__icon {
   margin: 2rem; }
