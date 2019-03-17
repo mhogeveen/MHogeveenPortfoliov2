@@ -260,52 +260,49 @@
   align-items: stretch;
   flex-direction: row;
   display: flex; }
-
-.row__container {
-  justify-content: flex-start;
-  align-items: stretch;
-  flex-direction: row;
-  display: flex; }
-  @media only screen and (max-width: 600px) {
-    .row__container {
-      justify-content: flex-start;
-      align-items: stretch;
-      flex-direction: column;
-      display: flex; } }
-
-.row--logo1, .row--logo2, .row--logo3, .row--logo4 {
-  height: 150px; }
-  @media only screen and (max-width: 600px) {
-    .row--logo1, .row--logo2, .row--logo3, .row--logo4 {
-      justify-content: flex-start;
-      align-items: center;
-      flex-direction: column;
-      display: flex;
-      height: auto; } }
-.row--logo1 span {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 3rem;
-  font-weight: 600;
-  color: #f2be54; }
-.row--logo2 span {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 3rem;
-  font-weight: 400;
-  color: lightgray;
-  text-shadow: 2px 2px black; }
-.row--logo3 span {
-  font-family: 'Raleway', sans-serif;
-  font-size: 3rem;
-  font-weight: 500;
-  color: #1e1f26; }
-.row--logo4 span {
-  font-family: 'Comfortaa', sans-serif;
-  font-size: 3rem;
-  font-weight: 700;
-  color: #1fc8db; }
-
-.row--description1, .row--description2, .row--description3, .row--description4 {
-  display: none; }
+  .row__container {
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-direction: row;
+    display: flex; }
+    @media only screen and (max-width: 600px) {
+      .row__container {
+        justify-content: flex-start;
+        align-items: stretch;
+        flex-direction: column;
+        display: flex; } }
+  .row--logo1, .row--logo2, .row--logo3, .row--logo4 {
+    height: 150px; }
+    @media only screen and (max-width: 600px) {
+      .row--logo1, .row--logo2, .row--logo3, .row--logo4 {
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        display: flex;
+        height: auto; } }
+  .row--logo1 span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+    color: #f2be54; }
+  .row--logo2 span {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 3rem;
+    font-weight: 400;
+    color: lightgray;
+    text-shadow: 2px 2px black; }
+  .row--logo3 span {
+    font-family: 'Raleway', sans-serif;
+    font-size: 3rem;
+    font-weight: 500;
+    color: #1e1f26; }
+  .row--logo4 span {
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #1fc8db; }
+  .row--description1, .row--description2, .row--description3, .row--description4 {
+    display: none; }
 
 .project__logo {
   justify-content: flex-start;
@@ -322,7 +319,6 @@
       width: 100%;
       padding: 1rem 0;
       text-align: center; } }
-
 .project__link {
   justify-content: flex-end;
   align-items: center;
@@ -355,7 +351,6 @@
       color: white; }
     .project__link a:active {
       transform: scale(0.96); }
-
 .project__description {
   width: 60%;
   padding: 0 2rem 2rem 0;
@@ -368,13 +363,11 @@
       padding: 0 0 1rem 0; } }
   .project__description p {
     line-height: 1.5; }
-
 .project__list {
   width: 40%; }
   @media only screen and (max-width: 600px) {
     .project__list {
       width: 100%; } }
-
 .project__expand-collapse {
   display: flex;
   flex-direction: row;

@@ -4,171 +4,177 @@
   padding: 3rem 0;
 }
 
-.portfolio__title {
-  font-size: 2.5rem;
+.portfolio {
+  &__title {
+    font-size: 2.5rem;
 
-  @include mq($breakpoint600) {
-    padding: 0 0 2rem 0;
-    text-align: center;
+    @include mq($breakpoint600) {
+      padding: 0 0 2rem 0;
+      text-align: center;
+    }
   }
 }
 
 .row {
   @include flex-box(flex-start, stretch, row, flex);
-}
 
-.row__container {
-  @include flex-box(flex-start, stretch, row, flex);
-
-  @include mq($breakpoint600) {
-    @include flex-box(flex-start, stretch, column, flex);
-  }
-}
-
-.row--logo {
-  &1, &2, &3, &4 {
-    height: 150px;
+  &__container {
+    @include flex-box(flex-start, stretch, row, flex);
 
     @include mq($breakpoint600) {
-      @include flex-box(flex-start, center, column, flex);
-      height: auto;
+      @include flex-box(flex-start, stretch, column, flex);
     }
   }
 
-  &1 {
-    span {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 3rem;
-      font-weight: 600;
-      color: $colmar;
+  &--logo {
+    &1, &2, &3, &4 {
+      height: 150px;
+
+      @include mq($breakpoint600) {
+        @include flex-box(flex-start, center, column, flex);
+        height: auto;
+      }
+    }
+
+    &1 {
+      span {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 3rem;
+        font-weight: 600;
+        color: $colmar;
+      }
+    }
+
+    &2 {
+      span {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 3rem;
+        font-weight: 400;
+        color: lightgray;
+        text-shadow: 2px 2px black;
+      }
+    }
+
+    &3 {
+      span {
+        font-family: 'Raleway', sans-serif;
+        font-size: 3rem;
+        font-weight: 500;
+        color: $pure;
+      }
+    }
+
+    &4 {
+      span {
+        font-family: 'Comfortaa', sans-serif;
+        font-size: 3rem;
+        font-weight: 700;
+        color: $tip;
+      }
     }
   }
 
-  &2 {
-    span {
-      font-family: 'Open Sans', sans-serif;
-      font-size: 3rem;
+  &--description {
+    &1, &2, &3, &4 {
+      display: none;
+    }
+  }
+}
+
+.project {
+  &__logo {
+    @include flex-box(flex-start, center, row, flex);
+    width: 60%;
+
+    @include mq($breakpoint600) {
+      @include flex-box(center, stretch, row, flex);
+      width: 100%;
+      padding: 1rem 0;
+      text-align: center;
+    }
+  }
+
+  &__link {
+    @include flex-box(flex-end, center, row, flex);
+    width: 40%;
+
+    @include mq($breakpoint600) {
+      @include flex-box(center, stretch, row, flex);
+      padding: 1rem 0;
+      text-align: center;
+    }
+
+    a {
+      @include flex-box(center, stretch, row, flex);
+      text-decoration: none;
+      color: $dark-gray;
+      font-size: 1rem;
       font-weight: 400;
-      color: lightgray;
-      text-shadow: 2px 2px black;
+      padding: 0.5rem 1rem;
+      border-radius: 2px;
+      border: 2px solid $red;
+      transition: all 200ms ease;
+
+      &:hover {
+        background-color: $red;
+        color: white;
+      }
+
+      &:active {
+        transform: scale(0.96);
+      }
     }
   }
 
-  &3 {
-    span {
-      font-family: 'Raleway', sans-serif;
-      font-size: 3rem;
-      font-weight: 500;
-      color: $pure;
+  &__description {
+    width: 60%;
+    padding: 0 2rem 2rem 0;
+    border-right: 1px solid gray;
+
+    @include mq($breakpoint600) {
+      border-right: none;
+      border-bottom: 1px solid gray;
+      width: 100%;
+      padding: 0 0 1rem 0;
+    }
+
+    p {
+      line-height: 1.5;
     }
   }
 
-  &4 {
-    span {
-      font-family: 'Comfortaa', sans-serif;
-      font-size: 3rem;
-      font-weight: 700;
-      color: $tip;
+  &__list {
+    width: 40%;
+
+    @include mq($breakpoint600) {
+      width: 100%;
     }
   }
-}
 
-.row--description {
-  &1, &2, &3, &4 {
-    display: none;
-  }
-}
-
-.project__logo {
-  @include flex-box(flex-start, center, row, flex);
-  width: 60%;
-
-  @include mq($breakpoint600) {
-    @include flex-box(center, stretch, row, flex);
+  &__expand-collapse {
+    display: flex;
+    flex-direction: row;
     width: 100%;
-    padding: 1rem 0;
-    text-align: center;
-  }
-}
+    cursor: pointer;
+    transition: 400ms ease;
 
-.project__link {
-  @include flex-box(flex-end, center, row, flex);
-  width: 40%;
-
-  @include mq($breakpoint600) {
-    @include flex-box(center, stretch, row, flex);
-    padding: 1rem 0;
-    text-align: center;
-  }
-
-  a {
-    @include flex-box(center, stretch, row, flex);
-    text-decoration: none;
-    color: $dark-gray;
-    font-size: 1rem;
-    font-weight: 400;
-    padding: 0.5rem 1rem;
-    border-radius: 2px;
-    border: 2px solid $red;
-    transition: all 200ms ease;
-
-    &:hover {
-      background-color: $red;
-      color: white;
+    i {
+      transition: transform 400ms ease;
+      color: $cyan;
     }
 
-    &:active {
-      transform: scale(0.96);
+    &:hover i {
+      transform: scale(1.3);
     }
   }
 }
 
-.project__description {
-  width: 60%;
-  padding: 0 2rem 2rem 0;
-  border-right: 1px solid gray;
-
-  @include mq($breakpoint600) {
-    border-right: none;
+.expand-collapse {
+  &__linebreak {
     border-bottom: 1px solid gray;
     width: 100%;
-    padding: 0 0 1rem 0;
+    margin: 0 0 0 1rem;
+    position: relative;
+    bottom: 1rem;
   }
-
-  p {
-    line-height: 1.5;
-  }
-}
-
-.project__list {
-  width: 40%;
-
-  @include mq($breakpoint600) {
-    width: 100%;
-  }
-}
-
-.project__expand-collapse {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  cursor: pointer;
-  transition: 400ms ease;
-
-  i {
-    transition: transform 400ms ease;
-    color: $cyan;
-  }
-
-  &:hover i {
-    transform: scale(1.3);
-  }
-}
-
-.expand-collapse__linebreak {
-  border-bottom: 1px solid gray;
-  width: 100%;
-  margin: 0 0 0 1rem;
-  position: relative;
-  bottom: 1rem;
 }
